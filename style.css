@@ -127,6 +127,7 @@ h2 {
     height: auto;
     align-self: flex-end; /* Alinha a imagem na parte inferior do contêiner */
     object-fit: contain; 
+    object-fit: cover;
 }
 
 .button-container {
