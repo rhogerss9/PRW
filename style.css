@@ -10,6 +10,8 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+
+
 h1{
     background-color: #34495e; /* Cor secundária azul escuro */
     padding: 20px; /* Reduzi o padding */
@@ -200,25 +202,48 @@ button {
 button:hover {
     background-color: #27ae60; /* Verde mais escuro */
 }
-/* Estilos padrão para todos os tamanhos de tela */
-.elemento {
-    width: 50vw;
-    height: 20vh;
-}
 
-/* Estilos adicionais para telas menores que 600 pixels de largura */
-@media (max-width: 600px) {
-    .elemento {
-        width: 80vw;
-        height: 30vh;
+/* Mobile Styles */
+/* Mobile Styles */
+/* Mobile Styles */
+@media only screen and (max-width: 600px) {
+    body {
+        align-items: center; /* Center content vertically */
+    }
+
+    h1 {
+        font-size: 30px;
+        margin-top: -15px;
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack the <ul> elements vertically */
+        align-items: center; /* Center <li> elements horizontally */
+    }
+
+    nav li {
+        margin-right: 0; /* Remove right margin for stacking */
+        margin-bottom: 10px; /* Add bottom margin for spacing */
+    }
+
+    nav img {
+        margin: -60px 0;
+        width: 100%;
+    }
+
+    .contato-bar {
+        font-size: 16px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    .produto {
+        font-size: 14px;
+    }
+
+    button {
+        padding: 12px 20px; /* Adjusted padding for smaller screens */
     }
 }
-
-/* Estilos adicionais para telas maiores que 1200 pixels de largura */
-@media (min-width: 1200px) {
-    .elemento {
-        width: 30vw;
-        height: 15vh;
-    }
-}
-
