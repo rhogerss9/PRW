@@ -19,6 +19,9 @@ h1{
     text-align: center; /* Centraliza o texto */
     margin-bottom: 20px;
     font-weight: bolder;
+    margin: 1px 1px;
+    margin-top: -25px;
+    width: 100%;
 }
 
 .container {
@@ -60,13 +63,14 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
+    margin-top: 23x;
 }
 
 nav li {
     cursor: pointer;
-    margin-right: 170px;
+    margin-right: 100px;
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
     align-items: center; 
 }
 
@@ -78,6 +82,22 @@ nav a {
 }
 a {
     color: #007bff; /* Cor padrão para links */
+}
+
+footer {
+    background-color: #34495e;
+    color: #08c3f1;
+    padding: 10px;
+    text-align: center;
+    margin: 10px 1px;
+    margin-top: 30px;
+    width: 100%; 
+}
+
+.contato-bar {
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
 }
 
 a:hover {
@@ -92,6 +112,7 @@ h2 {
     text-align: center; /* Centraliza o texto */
     margin-bottom: 20px;
     font-weight: bolder;
+    font-family: 'Poppins', sans-serif;
 }
 
 .destaque {
@@ -160,3 +181,25 @@ button {
 button:hover {
     background-color: #27ae60; /* Verde mais escuro */
 }
+/* Estilos padrão para todos os tamanhos de tela */
+.elemento {
+    width: 50vw;
+    height: 20vh;
+}
+
+/* Estilos adicionais para telas menores que 600 pixels de largura */
+@media (max-width: 600px) {
+    .elemento {
+        width: 80vw;
+        height: 30vh;
+    }
+}
+
+/* Estilos adicionais para telas maiores que 1200 pixels de largura */
+@media (min-width: 1200px) {
+    .elemento {
+        width: 30vw;
+        height: 15vh;
+    }
+}
+
